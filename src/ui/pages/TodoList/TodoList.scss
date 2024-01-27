@@ -1,0 +1,102 @@
+@import '../../assets/styles/styles.scss';
+
+.todoList-page {
+   background-color: $background-color;
+   width: 100%;
+   height: 100vh;
+
+   .header {
+      background-color: $color-active-2;
+      width: 100%;
+      height: 7vh;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: $color-white;
+
+      .todoList-name {
+         display: flex;
+         flex-direction: row;
+      }
+
+      img {
+         width: 5vh;
+         margin-left: 2vh;
+      }
+
+      p {
+         margin-left: 1vh;
+         font-size: x-large;
+      }
+
+      .add-task-button-holder {
+         padding-right: 2vh;
+         display: flex;
+         flex-direction: row;
+      }
+
+      button {
+         font-size: small !important;
+         width: auto;
+         height: auto;
+         margin: 0.5vh !important;
+      }
+   }
+
+   .todoList-container {
+      display: flex;
+      flex-direction: row;
+
+      .todoList-menu {
+         width: 35vh;
+         height: 93vh;
+         align-items: center;
+         flex-direction: column;
+         background-color: $color-active;
+
+         .sorted-components {
+            margin: 3vh;
+            font-size: large;
+         }
+      }
+
+      .todo-container {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         margin-left: 8vh;
+
+         p {
+            font-size: x-large;
+            padding-left: 3vh;
+         }
+
+         .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+         }
+
+         .todoList-tasks {
+            display: flex;
+         }
+
+         .calendar {
+            display: flex;
+            justify-content: end;
+
+            .date {
+               color: red;
+            }
+         }
+      }
+   }
+}
+
+.active {
+   background-color: $background-color !important;
+}

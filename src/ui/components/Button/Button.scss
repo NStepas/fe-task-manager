@@ -1,0 +1,14 @@
+@import '../../assets/styles/colors.scss';
+
+button {
+   display: flex;
+   font-size: medium;
+   margin: auto;
+   border-radius: 10px;
+   display: inline-block;
+   width: 150px;
+   cursor: pointer;
+   .active {
+      background-color: $background-color !important;
+   }
+}
